@@ -24,7 +24,7 @@ h3:hover{
     cursor: pointer;
 }
 p{
-    line-height: 2;
+    line-height: 1.2;
 }
 img{
     max-width: 100%;
@@ -57,10 +57,6 @@ p.read-btn{
     height: 30px;
     padding:10px;
 }
-.ng-logo{
-    width:20px;
-    height: 30px;
-}
 .link-login{
     text-transform: uppercase;
     font-size: 15px;
@@ -69,16 +65,37 @@ p.read-btn{
     letter-spacing:3px;
 }
 .link-subs{
+    background-color:black;
+    font-weight:700;
+    color:white;
+    padding:15px;
+    text-transform: uppercase;
+    font-size:13px;
+    letter-spacing:3px;
+}
+.link-renew{
+    font-weight: normal;
+    text-transform:capitalize;
+    border-bottom: 2px solid var(--primary);
+    background-size: 100% 200%;
+    background-image: linear-gradient(to bottom, #fff 50%, var(--primary) 50%);
+    transition: background-position .2s ease-in-out, color .2s ease-in-out;
+}
+.link-subs{
     background-size: 200% 100%;
     background-position: 100% 0;
-    background-image: linear-gradient(to left, black 50%, var(--primary) 50%);
+    background-image: linear-gradient(to left, black 50%, var(--primary)50%);
     transition: background-position .2s ease-in-out, color .2s ease-in-out;
     color:white;
     padding:1rem;
 }
 .link-subs:hover{
-    background-position:0% 0;
+    background-position: 0% 0;
     color:black;
+}
+.link-subs:hover{
+    color:black;
+    background-color: var(--primary);
 }
 .link-arrows i{
     color: black;
@@ -93,6 +110,13 @@ h1{
     letter-spacing: 3px;
     padding:2px;
     margin-bottom:0;
+}
+.border{
+    border-bottom: 
+    5px solid #ffcc00;
+    padding: 0.1em;
+    max-width: 70px;
+    margin:auto;
 }
 .p{
     padding:2px;
@@ -109,17 +133,6 @@ h1{
     color:black;
     cursor:pointer;
 }
-.border{
-    border-bottom: 
-    5px solid #ffcc00;
-    padding: 0.1em;
-    max-width: 70px;
-    margin:auto;
-}
-main{
-    padding:20px;
-}
-
 .main-news{
     position:relative;
     margin-bottom:20px;
@@ -127,10 +140,13 @@ main{
 .main-news-img{
     height:400px;
 }
+.main-news-img img{
+    height:100%;
+}
 .main-news-text{
     position:absolute;
     top:120px;
-    left: 20px;
+    left:20px;
 }
 .main-news-text p.title{
     color:white;
@@ -141,17 +157,11 @@ main{
 .main-news-text p.read-btn{
     color:white;
 }
-.main-news-img img{
-    max-height: 100%;
-}
 
 .secondary-news{
-    position:relative;
     margin-bottom: 20px;
 }
-
 .secondary-news-img{
-    height:400px;
 }
 .secondary-news-text{
     background-color:white;
@@ -159,7 +169,7 @@ main{
     padding:10px;
 }
 .secondary-news-text h3{
-    color:white;
+    color:gray;
     padding-bottom:0;
 }
 .secondary-news-text h3 span{
@@ -178,9 +188,6 @@ main{
 .pick-item img{
     width:100px;
     height:100px;
-}
-.pick-item p{
-    color:white;
 }
 .picks-text p{
     color:white;
