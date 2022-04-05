@@ -14,6 +14,10 @@ body{
     .container{
         width:75%;
     }
+    .flex-container{
+        display:flex;
+        flex-direction:row-reverse;
+    }
 }
 a{
     text-decoration: none;
@@ -86,9 +90,9 @@ p.read-btn{
 .link-subs{
     background-size: 200% 100%;
     background-position: 100% 0;
-    background-image: linear-gradient(to left, black 50%, var(--primary)50%);
+    background-image: linear-gradient(to left, black 50%, var(--primary) 50%);
     transition: background-position .2s ease-in-out, color .2s ease-in-out;
-    color:white;
+    color: white;
     padding:1rem;
 }
 .link-subs:hover{
@@ -103,6 +107,7 @@ p.read-btn{
     color: black;
     margin-right: 20px;
 }
+
 @media(min-width:768px){
     .menu{
         flex-basis: 450px;
@@ -145,6 +150,7 @@ header{
     color: white;
     text-align:center;
 }
+
 h1{
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -205,8 +211,6 @@ h1{
 .secondary-news{
     margin-bottom: 20px;
 }
-.secondary-news-img{
-}
 .secondary-news-text{
     background-color:white;
     margin-top: -5px;
@@ -222,6 +226,24 @@ h1{
 .secondary-news.text p.title{
     font-size:24px;
     font-weight:700;
+}
+@media(min-width:768){
+    .secondary-news-container{
+        display:flex;
+        justify-content: space-between;
+        width:40rem;
+    }
+    .secondary-news{
+        width:calc(50% - 1rem);
+        height:25rem;
+    }
+    .main-news{
+        width:100%;
+    }
+    .secondary-news-img img{
+        width: 100%;
+        height: 12rem;
+    }
 }
 .pick-item{
     display:grid;
